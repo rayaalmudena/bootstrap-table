@@ -1,5 +1,5 @@
 let url = "https://corona.lmao.ninja/v3/covid-19/countries/Spain,Italy,Germany,Poland,Finland"
-let warningCases = 10000
+let warningCases = 5000
 
 function timeFormatter(value, row) {
   let d = new Date(value)
