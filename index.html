@@ -15,13 +15,18 @@
   <script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
   
 
+  <script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/tableExport.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/libs/jsPDF/jspdf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/libs/jsPDF-AutoTable/jspdf.plugin.autotable.js"></script>
+
+
 
 </head>
 
 <body>
   <h1>Estadísticas Covid</h1>
 
-  <table id="table" data-show-export="true" data-toggle="table" data-url="https://disease.sh/v3/covid-19/countries/Spain,Italy,china">
+  <table id="table" data-show-export="true" data-toggle="table" data-url="https://disease.sh/v3/covid-19/countries/Spain,Italy,china" data-toolbar="#toolbar">
     <thead>
       <tr>
         <th data-field="country" data-sortable="true">País</th>

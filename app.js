@@ -37,31 +37,11 @@ function addCountry(e) {
 
 }
 
-$(function () {
-    $('#toolbar').find('select').change(function () {
-        $table.bootstrapTable('destroy').bootstrapTable({
-            exportDataType: $(this).val(),
-            exportTypes: ['json', 'xml', 'csv', 'txt', 'sql', 'excel', 'pdf'],
-            columns: [
-                {
-                    field: 'state',
-                    checkbox: true,
-                    visible: $(this).val() === 'selected'
-                },
-                {
-                    field: 'country',
-                    title: 'País'
-                }, {
-                    field: 'population',
-                    title: 'Población total'
-                }, {
-                    field: 'activePerOneMillion',
-                    title: 'Casos activos por millón de habitantes'
-                }, {
-                    field: 'updated',
-                    title: 'Última fecha de datos actualizados'
-                }
-            ]
-        })
-    }).trigger('change')
-})
+$(function() {
+    
+    $table.bootstrapTable('destroy').bootstrapTable({
+      exportDataType: $(this).val(),
+      exportTypes: ['json', 'xml', 'csv', 'txt', 'sql', 'excel', 'pdf'],
+      
+    })
+  })
